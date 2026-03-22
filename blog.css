@@ -1,0 +1,132 @@
+
+
+/* NAVBAR */
+.navbar-custom{
+    background: linear-gradient(to right, #0b0f1a);
+}
+.tagline{
+    font-size: 13px;
+    color: #ddd;
+}
+
+/* my nav */
+.navbar-brand span {
+    color: #ff3c78;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #1f466b !important;
+}
+
+
+/*BANNER */
+.top-text{
+    text-align: left;
+}
+.top-text span{
+    color: #e0566b;
+    font-weight: 600;
+    font-size: 60px;
+}
+.banner img{
+    filter: brightness(50%);
+    height: 500px;
+}
+
+
+
+
+/* bolgs */
+
+.blog-img img{
+    transition:0.4s ease;
+}
+
+.blog-img{
+    overflow:hidden;
+}
+
+.blog-img:hover img{
+    transform:scale(1.05);
+}
+
+.blog-meta{
+    font-size:14px;
+    color:#555;
+}
+
+.blog-title a{
+    text-decoration: underline;
+    color:#000;
+    font-weight:700;
+}
+
+.blog-title a:hover{
+    color:#e63946;
+}
+
+
+
+
+
+/* footer */
+.footer1{
+    background-color: #222833;
+    padding: 35px;
+}
+.footer-text{
+color: #ddd;
+}
+.footer-img{
+    width: 500px;
+}
+.linkhead{
+    margin-left: 100px;
+    width: 300px;
+}
+
+
+.footer1 hr{
+    margin:40px 0 20px;
+    border:0.5px solid #444;
+}
+.footer2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.footer2-links span{
+    margin-right:25px;
+    cursor:pointer;
+    color:#ccc;
+}
+.copyright{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    color:#aaa;
+}
+.chat-btn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#ff2d55;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}

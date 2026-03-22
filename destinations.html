@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RACE</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="destinations.css">
+
+    <!-- ICON LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- BOOSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- BOOSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<style>
+  *{
+    font-family: serif;
+}
+
+
+
+/* NAVBAR */
+.navbar-custom{
+    background: linear-gradient(to right, #0b0f1a);
+}
+.tagline{
+    font-size: 13px;
+    color: #ddd;
+}
+
+
+/* my nav */
+.navbar-brand span {
+    color: #ff3c78;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #1f466b !important;
+}
+
+
+/*BANNER */
+.top-text{
+    text-align: left;
+}
+.top-text span{
+    color: #e0566b;
+    font-weight: 600;
+    font-size: 60px;
+}
+.banner img{
+    filter: brightness(50%);
+    height: 500px;
+}
+
+/* image section */
+
+.destinations{
+    display:flex;
+    justify-content:space-between;
+    padding:80px 120px;
+    gap:60px;
+}
+.card{
+    text-align:center;
+    flex:1;
+}
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+}
+.card h2{
+    font-size:40px;
+    margin:30px 0 20px;
+    text-decoration:underline;
+    font-weight:bold;
+}
+.card p{
+    font-size:18px;
+    line-height:1.8;
+    padding:0 10px;
+}
+
+
+/* footer */
+.footer1{
+    background-color: #222833;
+    padding: 35px;
+}
+.footer-text{
+color: #ddd;
+}
+.footer-img{
+    width: 500px;
+}
+.linkhead{
+    margin-left: 100px;
+    width: 300px;
+}
+.footer1 hr{
+    margin:40px 0 20px;
+    border:0.5px solid #444;
+}
+
+
+.footer2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.footer2-links span{
+    margin-right:25px;
+    cursor:pointer;
+    color:#ccc;
+}
+.copyright{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    color:#aaa;
+}
+.chat-btn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#ff2d55;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+@media(max-width:992px){
+    .destinations{
+        flex-direction:column;
+        padding:50px;
+    }
+}
+
+</style>
+
+
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+
+        <!-- Logo + Title -->
+        <a class="navbar-brand d-flex align-items-center text-white" href="intex.html">
+            <img src="https://indiatravel.com/wp-content/uploads/2021/12/cropped-shikhar-web-logo1.png" alt="" width="250" height="60" class="me-2">
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link fs-5 active" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="package.html">Packages</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="Festival.html">Festival Tour</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="PilgrimageIndia.html">Pilgrimage India</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" data-bs-toggle="dropdown">
+                        Luxurious of India
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="luxurytrain.html">Luxury Train</a></li>
+                        <li><a class="dropdown-item" href="luxuryhotel.html">Luxury Hotel</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link fs-5" href="blog.html">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="booknow.html">Book Now</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+    <!-- CAROUSEL -->
+
+    <div id="slide1" class="carousel slide">
+
+        <!-- slide la image -->
+        <div class="carousel-inner">
+            <div class="carousel-item banner active">
+                <img src="./image/banner5.jpg" alt="" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- SLIDE LA TEXT -->
+        <div class="carousel-caption custom-caption">
+            <h1 class="top-text">Best <span>Tour Destination</span> of India</h1>
+        </div>
+
+    </div>
+
+    <!-- image section -->
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Agra-imghh.jpg?w=1000&ssl=1" alt="Agra">
+            <h2>Agra</h2>
+            <p>
+              Agra is home to the beautiful Taj Mahal. On your visit to Agra,
+              also visit Agra Fort, Fatehpur Sikri and Sikandra.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Alleppey-Imghh.png?w=1000&ssl=1" alt="Alleppey">
+            <h2>Alleppey</h2>
+            <p>
+              Alleppey is the hub for backwater tourism in Kerala.
+              House boats locally called “kettuvallam” are available
+              on hire on a daily basis.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Amritsar-imghh.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Amritsar</h2>
+            <p>
+              Amritsar, Punjab’s biggest city was the center of celebrations
+              of the 400th anniversary (Parkash Utsav) of the installation
+              of the Guru Granth Sahib.
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Auli-imghh.jpg?w=1000&ssl=1" alt="Agra">
+            <h2>Auli</h2>
+            <p>
+              Auli is a part of the Garhwal mountain range. It lies about 15 km/9 miles from Joshmath on the Badrinath Pilgrimage route just beyond Rishikesh.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Bikaner-Imghh.jpg?w=1000&ssl=1" alt="Alleppey">
+            <h2>Bikaner</h2>
+            <p>
+             Bikaner is a prominent city of Rajasthan and is in the heart of the Thar Desert. It is famed for its architectural excellence
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/chhattisgarh-imgg0.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Chattisgarh</h2>
+            <p>
+              Chattisgarh is the state in Central India, endowed with a rich cultural heritage and attractive natural diversit also known land of waterfalls
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Chennai-Imghh.png?w=1000&ssl=1" alt="Agra">
+            <h2>Chennai</h2>
+            <p>
+              Chennai, the first city of the south, and capital of Tamil Nadu widely known as Madras till 1996, has a rich tradition and civilisation
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Chittorgarh.jpg?w=1000&ssl=1" alt="Alleppey">
+            <h2>Chittorgarh</h2>
+            <p>Lying on the Berach River, Chittaurgarh is a city and municipality in Rajasthan state of western India.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Jim-Corbett-National-Park-imghh.jpg?w=1000&ssl=1">
+            <h2>Corbett National Park</h2>
+            <p>
+              The oldest national park in India, established in 1936. Located in the Nainital district of Uttarakhand, it is India’s first national park
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2024/08/Darjeeling-train-toy.webp?w=720&ssl=1" alt="Agra">
+            <h2>Darjeeling</h2>
+            <p>
+              Explore the enchanting beauty of Darjeeling with its breathtaking views, iconic toy train rides, lush tea gardens, and vibrant local culture.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/New-Delhi-imghh.jpg?w=1000&ssl=1" alt="Alleppey">
+            <h2>Delhi</h2>
+            <p>
+              The capital city of India, Delhi, can be labeled as a cultural melting pot where diverse Indian cultures dwell together.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2023/10/Untitled-design-12-1.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Gangtok</h2>
+            <p>Gangtok is the beautiful capital city of Sikkim. A Buddhist haven, Gangtok is wreathed with fluffy clouds and surrounded by majestic snow-capped mountains.
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Goa-Travel.jpg?w=1000&ssl=1" alt="Agra">
+            <h2>Goa</h2>
+            <p>
+              Goa is popular world-over for its beach trance parties, especially on the Anjuna beach. The beach is a major attraction for vacationers
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Gulmarg-imghh.jpg?w=1000&ssl=1" alt="Alleppey">
+            <h2>Gulmarg</h2>
+            <p>
+              A beautiful meadow nestled among the mountains of Kashmir is 50 km (30 miles) from Srinagar, at an altitude of 2730 meters (9000 feet).
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Jaipur.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Jaipur</h2>
+            <p>
+              Built by the warrior-astronomer Raja Sawai Jai Singh II in 1727. Jaipur is a charming place, which dazzles the eye of tourist
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Jaisalmer-imgh.jpg?w=1000&ssl=1" alt="Agra">
+            <h2>Jaisalmer</h2>
+            <p>
+              In Rajasthan’s Thar Desert, lies the golden city of Jaisalmer which reminds one excerpt from the Arabian Nights tales.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Jodhpur.jpg?w=1000&ssl=1" alt="Alleppey">
+            <h2>Jodhpur</h2>
+            <p>Jodhpur Jodhpur, in Rajasthan, is known for its rich culture, history, and heritage. This popular tourist destination is also known as the Blue City
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Kalimpong.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Kalimpong</h2>
+            <p>
+              Kalimpong is a bustling town in the northern part of West Bengal. Apart from being a busy business hub, educational institutions
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2024/01/1-2.webp?w=720&ssl=1" alt="Agra">
+            <h2>Katra</h2>
+            <p>
+              Katra is a town situated in the Trikuta Mountains of the Indian state of Jammu and Kashmir. Starting point for Vaishno
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2024/09/Khajjiar-Tour-2.webp?w=720&ssl=1" alt="Alleppey">
+            <h2>Khajjiar</h2>
+            <p>Khajjiar, known as the "Mini Switzerland of India," is a picturesque hill station in Himachal Pradesh
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Khajuraho.jpg?w=1000&ssl=1" alt="Amritsar">
+            <h2>Khajuraho</h2>
+            <p>
+             The 9th to 12th century temples of Khajuraho is the evidences of the architectural geniuses during the times of Chandela dynasty.
+            </p>
+          </div>
+      
+        </section>
+
+        <section class="destinations">
+            
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Kochi-Imghh.png?w=1000&ssl=1" alt="Agra">
+            <h2>Kochi</h2>
+            <p>Formerly, Cochin, was the centre of Indian spice trade for many centuries, and was known to the Yavanas (Greeks) as well as Romans
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2024/09/Kolkata-Tour-Package-4.webp?w=720&ssl=1" alt="Alleppey">
+            <h2>Kolkata</h2>
+            <p>
+              Kolkata, the "City of Joy," is a vibrant blend of rich history, colonial architecture, cultural festivals, and a bustling artistic spirit.
+            </p>
+          </div>
+      
+          <div class="card">
+            <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Kovalam-Imghh.png?w=1000&ssl=1" alt="Amritsar">
+            <h2>Kovalam</h2>
+            <p>
+              A beach town by the Arabian Sea in Thiruvananthapuram city, Kerala, India . It is Kerala’s most famous tourist attraction, India’s most famous beach.
+            </p>
+          </div>
+      
+        </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer1 text-white pt-5">
+    
+        <div class="container footer-text">
+        
+            <div class="row gy-5">
+            
+                <!-- Column 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center text-white" href="#">
+                        <img src="https://indiatravel.com/wp-content/uploads/2021/12/cropped-shikhar-web-logo1.png"
+                            alt="" width="300" height="70" class="me-2 img-fluid">
+                    </a>
+                
+                    <h6 class="foot-head fs-6 mt-4 lh-lg">
+                        IndiaTravel is a gateway of information and services for travelers who want to get to know India a little bit better
+                    </h6>
+                
+                    <div class="icons fs-4 pt-4">
+                        <i class="bi bi-facebook p-2"></i>
+                        <i class="bi bi-twitter-x p-2"></i>
+                        <i class="bi bi-linkedin p-2"></i>
+                        <i class="bi bi-instagram p-2"></i>
+                        <i class="bi bi-youtube p-2"></i>
+                    </div>
+                </div>
+            
+                <!-- Column 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="linktext fs-5 fw-bold">Useful Links</h4>
+                
+                    <ul class="navbar-nav mt-3">
+                        <li class="nav-item p-1">Home</li>
+                        <li class="nav-item p-1">About us</li>
+                        <li class="nav-item p-1">Tour Packages</li>
+                        <li class="nav-item p-1">Destinations</li>
+                        <li class="nav-item p-1">Blogs</li>
+                        <li class="nav-item p-1">Destination Wedding</li>
+                    </ul>
+                
+                    <button class="btn btn-outline-light px-4 py-2 mt-4">
+                        Send Query
+                    </button>
+                </div>
+            
+                <!-- Column 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fs-5 fw-bold">Contact</h4>
+                
+                    <p class="mt-3">
+                        <i class="bi bi-geo-alt"></i>
+                        M-66, Lajpat Nagar 2, New Delhi, 110024, India
+                    </p>
+                
+                    <p>
+                        <i class="bi bi-envelope-paper-heart"></i>
+                        info@indiatravel.com
+                    </p>
+                
+                    <h5 class="mt-4">WhatsApp</h5>
+                
+                    <p class="mt-3">
+                        <i class="bi bi-whatsapp"></i>
+                        +91 98210 88817
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+    
+        <hr class="border-light mt-5">
+    
+        <!-- Bottom Row -->
+        <div class="container py-3">
+            <div class="row text-center text-md-start">
+            
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <span class="me-4">Disclaimer</span>
+                    <span class="me-4">Network Website</span>
+                    <span>Travel Tips</span>
+                </div>
+            
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        Copyright © 2025 India Travel. All Rights Reserved.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+    
+        <!-- Floating Chat Button -->
+        <div class="chat-btn position-fixed bottom-0 end-0 m-4 bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width:65px; height:65px; cursor:pointer;">
+            <i class="bi bi-chat-heart-fill fs-4"></i>
+        </div>
+    
+    </footer>
+
+
+</body>
+</html>

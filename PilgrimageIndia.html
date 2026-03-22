@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RACE</title>
+
+    <!-- ICON LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- BOOSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- BOOSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<style>
+  *{
+    font-family: serif;
+}
+
+
+
+/* NAVBAR */
+.navbar-custom{
+    background: linear-gradient(to right, #0b0f1a);
+}
+.tagline{
+    font-size: 13px;
+    color: #ddd;
+}
+
+
+/* my nav */
+.navbar-brand span {
+    color: #ff3c78;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.nav-link {
+    color: white !important;
+    margin: 0 10px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #1f466b !important;
+}
+
+
+/*BANNER */
+.top-text{
+    text-align: left;
+}
+.top-text span{
+    color: #e0566b;
+    font-weight: 600;
+    font-size: 60px;
+}
+.banner img{
+    filter: brightness(50%);
+    height: 500px;
+}
+
+
+/* image section */
+.img-text{
+    margin-top: 50px;
+}
+.img-text h1{
+    font-size: 50px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+}
+.img-text p{
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.one{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.one img{
+    border-radius: 20px;
+    width: 450px;
+    height: 450px;
+}
+
+
+/* 01 */
+.num1{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #787575;
+    text-align: center;
+}
+.num h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+.num h4{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: end;
+    margin-right: 100px;
+}
+.num p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 02 */
+
+.number{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #787575;
+}
+.head2{
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+.heads2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-right: 100px;
+    color: #5c5c5c;
+}
+p{
+    margin-top: 50px;
+    line-height: 2.5;
+    font-size: 18px;
+    text-align: justify;
+}
+.para2{
+    margin-left: 50px;
+}
+.smimg{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+/* footer */
+.footer1{
+    background-color: #222833;
+    padding: 35px;
+}
+.footer-text{
+color: #ddd;
+}
+.footer-img{
+    width: 500px;
+}
+.linkhead{
+    margin-left: 100px;
+    width: 300px;
+}
+.footer1 hr{
+    margin:40px 0 20px;
+    border:0.5px solid #444;
+}
+
+
+.footer2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.footer2-links span{
+    margin-right:25px;
+    cursor:pointer;
+    color:#ccc;
+}
+.copyright{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    color:#aaa;
+}
+.chat-btn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#ff2d55;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+@media(max-width:992px){
+    .destinations{
+        flex-direction:column;
+        padding:50px;
+    }
+}
+
+</style>
+
+
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+
+        <!-- Logo + Title -->
+        <a class="navbar-brand d-flex align-items-center text-white" href="intex.html">
+            <img src="https://indiatravel.com/wp-content/uploads/2021/12/cropped-shikhar-web-logo1.png" alt="" width="250" height="60" class="me-2">
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link fs-5 active" href="destinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="package.html">Packages</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="Festival.html">Festival Tour</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="PilgrimageIndia.html">Pilgrimage India</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" data-bs-toggle="dropdown">
+                        Luxurious of India
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="luxurytrain.html">Luxury Train</a></li>
+                        <li><a class="dropdown-item" href="luxuryhotel.html">Luxury Hotel</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link fs-5" href="blog.html">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="booknow.html">Book Now</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+    <!-- CAROUSEL -->
+
+    <div id="slide1" class="carousel slide">
+
+        <!-- slide la image -->
+        <div class="carousel-inner">
+            <div class="carousel-item banner active">
+                <img src="./image/banner5.jpg" alt="" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- SLIDE LA TEXT -->
+        <div class="carousel-caption custom-caption">
+            <h1 class="top-text">Best <span>Tour Destination</span> of India</h1>
+        </div>
+
+    </div>
+
+<!-- IMAGE SECTION -->
+
+        <div class="container">
+
+            <div class="container py-5">
+            
+                <div class="row g-4">
+                
+                    <!-- Image 1 -->
+                    <div class="col-lg-8 col-md-6 col-12 img-text">
+                        <h1>Discover the Sacred Pilgrimage Places of India</h1>
+
+                        <p>Embark on a soul-stirring journey to the heart of spirituality, as we unveil the enchanting pilgrimage destinations of India. India, a land steeped in ancient traditions and rich cultural heritage, is home to some of the holiest sites revered by millions worldwide. Explore the divine realms of Chardham, Dwarka, Somnath, and more, where spirituality meets breathtaking landscapes.</p>
+                    
+                    
+                    </div>
+                
+                    <!-- Image 3 -->
+                    <div class="col-lg-4 col-md-6 col-6">
+                      <div class="one overflow-hidden rounded-4 shadow">
+                        <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/03/Maharajas-Express-Train-in-India.webp?w=500&ssl=1"class="img-fluid w-100">
+                      </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+
+
+        </div>
+
+
+        <!-- 01 -->
+
+        <div class="container num">
+            <h1 class="num1">01</h1>
+            <h1>Chardham Yatra</h1>
+            <h4>A Divine Sojourn</h4>
+            <p>Experience the divine aura of the Chardham Yatra, a pilgrimage circuit comprising Yamunotri, Gangotri, Kedarnath, and Badrinath. Nestled in the majestic Himalayas, these sacred shrines beckon devotees with their spiritual energy and pristine natural beauty.</p>
+
+            <div class="row g-4">
+
+                <!-- Image 1 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/03/Palace-on-Wheels-Train-in-India.webp?w=500&ssl=1"class="img-fluid w-100">
+                  </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/03/Maharajas-Express-Train-in-India.webp?w=500&ssl=1"class="img-fluid w-100">
+                  </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/03/The-Golden-Chariot-Train.webp?w=500&ssl=1"class="img-fluid w-100">
+                  </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/03/Palace-on-Wheels-Train-in-India.webp?w=500&ssl=1"class="img-fluid w-100">
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <!-- 02 -->
+
+        <div class="container align-items-center">
+
+            <div>
+                <h2 class="number">02</h2>
+                <h1 class="head2">Dwarka Somnath</h1>
+                <h4 class="heads2">Gateway to Divinity & The Eternal Shrine</h4>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Image 1 -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    
+                    <p><b>Dwarkadhish Temple – Lord of Dwarka:</b>
+                        Discover the coastal town of Dwarka, steeped in mythological significance as the kingdom of Lord Krishna. The Dwarkadhish Temple, dedicated to Lord Krishna, stands as a testament to the city’s rich history and religious importance. The captivating views of the Arabian Sea add a touch of serenity to this divine abode.</p>
+                    
+                    
+                    <p class="para2"><b>Bet Dwarka – Island of Devotion:</b> Embark on a boat journey to Bet Dwarka, an island associated with Lord Krishna’s childhood. The Nageshwar Jyotirlinga and Rukmini Temple are must-visit sites that enhance the spiritual ambiance of this sacred destination.</p>
+                    
+                    <p><b>Somnath Temple – Radiance of Lord Shiva:</b>
+                        Witness the divine glory of Somnath, home to one of the twelve Jyotirlingas dedicated to Lord Shiva. The Somnath Temple, perched on the shores of the Arabian Sea, exudes architectural grandeur and spiritual vibrancy. The sound of waves and the hymns create an ethereal atmosphere, inviting devotees to connect with the divine.</p>
+                    
+                    <p class="para2"><b>Prabhas Patan – Spiritual Confluence:</b> Explore the spiritual confluence at Prabhas Patan, where the Triveni Sangam (meeting point of three rivers) adds to the sacredness of the region. The ancient temples and serene landscapes make Prabhas Patan a place of deep introspection and divine connection.</p>
+
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-lg-3 col-md-3 col-6">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/06/Dwarka-Somnath-packages.webp?w=900&ssl=1"class="img-fluid w-100">  
+                  </div>
+                  <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/06/Dwarka-Somnath-Temple-.webp?w=1366&ssl=1" alt="" class="img-fluid smimg shadow">
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-lg-3 col-md-3 col-6">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/06/Dwarka-Somnath-Temple-.webp?w=1366&ssl=1" alt="" class="img-fluid smimg shadow">
+                  <div class="one overflow-hidden rounded-4 shadow">
+                    <img src="https://i0.wp.com/indiatravel.com/wp-content/uploads/2025/06/Dwarka-Somnath-Package-2.webp?w=900&ssl=1"class="img-fluid w-100">
+                  </div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-dark px-5 py-3 mb-2 ml-5">Click Itinerary</button>
+        </div>
+
+
+
+        <!-- text -->
+
+        <div class="container text-center mt-4">
+            <h1 class="fw-bold">Plan Your Spiritual Trip with India Travels</h1>
+            <p class="text-center">Embark on a pilgrimage like no other, where spirituality intertwines with the awe-inspiring landscapes of India. Plan your journey to these sacred sites, and let the divine energy of Chardham, Dwarka, Somnath, and more leave an indelible mark on your soul. Immerse yourself in the profound spiritual experiences that await you in the heart of India. Discover the magic of devotion, culture, and nature – all woven together in a tapestry of divine grace.</p>
+        </div>
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer1 text-white pt-5">
+
+        <div class="container footer-text">
+
+            <div class="row gy-5">
+
+                <!-- Column 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center text-white" href="#">
+                        <img src="https://indiatravel.com/wp-content/uploads/2021/12/cropped-shikhar-web-logo1.png"
+                            alt="" width="300" height="70" class="me-2 img-fluid">
+                    </a>
+
+                    <h6 class="foot-head fs-6 mt-4 lh-lg">
+                        IndiaTravel is a gateway of information and services for travelers who want to get to know India a little bit better
+                    </h6>
+
+                    <div class="icons fs-4 pt-4">
+                        <i class="bi bi-facebook p-2"></i>
+                        <i class="bi bi-twitter-x p-2"></i>
+                        <i class="bi bi-linkedin p-2"></i>
+                        <i class="bi bi-instagram p-2"></i>
+                        <i class="bi bi-youtube p-2"></i>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="linktext fs-5 fw-bold">Useful Links</h4>
+
+                    <ul class="navbar-nav mt-3">
+                        <li class="nav-item p-1">Home</li>
+                        <li class="nav-item p-1">About us</li>
+                        <li class="nav-item p-1">Tour Packages</li>
+                        <li class="nav-item p-1">Destinations</li>
+                        <li class="nav-item p-1">Blogs</li>
+                        <li class="nav-item p-1">Destination Wedding</li>
+                    </ul>
+
+                    <button class="btn btn-outline-light px-4 py-2 mt-4">
+                        Send Query
+                    </button>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fs-5 fw-bold">Contact</h4>
+
+                    <p class="mt-3">
+                        <i class="bi bi-geo-alt"></i>
+                        M-66, Lajpat Nagar 2, New Delhi, 110024, India
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope-paper-heart"></i>
+                        info@indiatravel.com
+                    </p>
+
+                    <h5 class="mt-4">WhatsApp</h5>
+
+                    <p class="mt-3">
+                        <i class="bi bi-whatsapp"></i>
+                        +91 98210 88817
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="border-light mt-5">
+
+        <!-- Bottom Row -->
+        <div class="container py-3">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <span class="me-4">Disclaimer</span>
+                    <span class="me-4">Network Website</span>
+                    <span>Travel Tips</span>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        Copyright © 2025 India Travel. All Rights Reserved.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Floating Chat Button -->
+        <div class="chat-btn position-fixed bottom-0 end-0 m-4 bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+             style="width:65px; height:65px; cursor:pointer;">
+            <i class="bi bi-chat-heart-fill fs-4"></i>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
